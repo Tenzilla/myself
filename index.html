@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tenzin's Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/5819cac334.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Tenzin..png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Tenzin</span><br />based in New York City</h1>
+        </div>
+      </div>
+    </div>
+    <!---------- About ---------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpeg" alt="A photo of myself" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              For as long as I can remember, I've always been curious as to how 
+              our phones and computers do what we want them to do and how colors and flashy displays 
+              were made as if it was painted onto the web page. This steered my down the path to learn more about
+              computers and the different softwares that we all see and use on a daily basis. 
+              I graduated in the summer of 2022 with a B.S in Computer Science, 
+              I spent a lot of my time over the past 6-7 years doing front end and sometimes back end. 
+              Collaborating with others to create amazing projects is what I enjoy the most as I see that it's
+              the best way to learn from each other and share knowledge. My professional experience includes full stack development
+              with a focus on frontend. I also have experience in data automation, and a little bit of UI/UX design. 
+              I'm passionate about creating programs that demonstrate correctness, readability and efficiency as well as 
+              making it reach the right audiences. In my spare time you can find me in a coffeeshop
+              focused on my laptop trying to debug a piece of code. Outside of coding, snowboarding and hiking are my two favorite hobbies!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Creating and maintaining web applications</li>
+                <li><span>Automated Testing</span><br />Creating test scripts to retrieve data</li>
+                <li>
+                  <span>UI/UX</span><br />Designing Web/App Interfaces using Figma</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />Learned the process of creating manual and automated tests using Azure DevOps 
+                  and other test management software. Also gained interest and learned more about Data Warehouse Testing 
+                  and Service Oriented Architecture (SOA)
+                </li>
+                <li><span>2021</span><br />Understood more of the role as a full stack developer while using AWS. Met with clients as well to discuss and
+                work on building their requirements of a web application by a certain deadline</li>
+                <li>
+                  <span>2021</span><br />Learned mobile app development using React Native while testing and implementing APIs using Postman to create
+                  an iOS application for competitive analysis on different companies
+                </li>
+                <li>
+                  <span>2020</span><br />Gained experience in the MERN Stack to develop a functional web application in a team. 
+                  Also learned the functionality of agile methodologies in a development team and how it increases productivity
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022</span><br />B.S Computer Science from Brooklyn
+                  College
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------services---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Development</h2>
+            <p>Going step by step in the Software Development Life Cycle, I aim to design and create a functional web application</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>Using Figma as my main application for design, I will create an interactive wireframe for web or mobile applications</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <h2>Automated Testing</h2>
+            <p>I aim to create an efficient automated test script for web scraping using Selenium</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------portfolio------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Automated Web Browser Testing</h3>
+              <p>
+                An automated web browser test created using C# and
+                Selenium driver on the .NET platform to retrieve accurate data from a specific website and
+                output specific data into Excel.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+                <h3>CRUD Application - To Do List</h3>
+                <p>
+                  Built using HTML, CSS, and Javascript and stored within a local database using a JSON database. 
+                  Have the ability to create, update, remove, and check off tasks with ease.
+                </p>
+                <a href=""
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i></i
+                ></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+                <h3>Weather Application</h3>
+                <p>
+                  Using React, check the next weather forecast in your location! 
+                  Two API's used, GeoDB Cities from RapidAPI and OpenWeather.
+                </p>
+                <a href=""
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i></i
+                ></a>
+              </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-------------------------------contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tenzins97@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 718-288-9033</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tenzin-shedup/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Tenzin Shedup Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tenzin</p>
+        </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<!--------contact script------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUAslDGQt1_pZBQ3Nql-wFSZaFN49U5csFveijqyr7Dl7JTTEzOIFDFog02KwiyPRZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  </body>
+</html>
